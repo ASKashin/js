@@ -1,6 +1,6 @@
 # Gabooo
 
-You can see it [here](https://askashin.github.io/gabooo/).
+You can see it [here](https://askashin.github.io/js/).
 
 Start: 30.09.21
 
