@@ -19,7 +19,7 @@ const add = (a) => {
     if (a === 1) {
         console.log(`«${a} год»`)
     } else if (a === 2 || a === 3 || a === 4) {
-        console.log(`"«${a} года»`)
+        console.log(`«${a} года»`)
     } else {
         console.log(`«${a} лет»`)
     }
