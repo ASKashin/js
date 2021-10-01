@@ -15,14 +15,29 @@
 
 // задание на годы
 
-const add = (a) => {
-    if (a === 1) {
-        console.log(`«${a} год»`)
-    } else if (a === 2 || a === 3 || a === 4) {
-        console.log(`«${a} года»`)
-    } else {
-        console.log(`«${a} лет»`)
-    }
+// const add = (a) => {
+//     if (a === 1) {
+//         console.log(`«${a} год»`)
+//     } else if (a === 2 || a === 3 || a === 4) {
+//         console.log(`«${a} года»`)
+//     } else {
+//         console.log(`«${a} лет»`)
+//     }
 
-};
-add(4);
+// };
+// add(4);
+
+
+// вариант более правильный
+
+// const add = (a) => {
+//     if (a === 1) {
+//         console.log(`«${a} год»`)
+//     } else if (a > 1 && a < 5) {
+//         console.log(`«${a} года»`)
+//     } else {
+//         console.log(`«${a} лет»`)
+//     }
+
+// };
+// add(4);
