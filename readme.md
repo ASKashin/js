@@ -1,4 +1,4 @@
-# Gabooo
+# js
 
 You can see it [here](https://askashin.github.io/js/).
 
