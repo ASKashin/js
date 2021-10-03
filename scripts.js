@@ -30,10 +30,10 @@
 
 // вариант более правильный
 
-// const add = (a) => {
+// const agi = (a) => {
 //     if (a === 1) {
 //         console.log(`«${a} год»`)
-//     } else if (a > 1 && a < 5) {
+//     } else if ( a > 1 && a < 5 ) {
 //         console.log(`«${a} года»`)
 //     } else {
 //         console.log(`«${a} лет»`)
@@ -41,3 +41,23 @@
 
 // };
 // add(4);
+
+
+
+const add = (a) => {
+    if (typeof a === 'number') {
+            if (a === 1) {
+                console.log(`«${a} год»`)
+            } else if (a === 2 || a === 3 || a === 4) {
+                console.log(`«${a} года»`)
+            } else {
+                console.log(`«${a} лет»`)
+            }
+    } else {
+        console.log ('введенные данные не являются числом')
+    }
+}
+add(5);
+
+
+
