@@ -96,12 +96,17 @@
 
 // Homework 07.10
 
-const a = [0, 1, false, 2, undefined, '', 3, null];
+// const a = [-1,0, 1, false, 2, undefined, '', 3, null];
 
-const b = a.filter((el) => {
+// const b = a.filter((el) => {
 
-    return el > 0
+//     return !!el 
+// });
 
-});
 
-console.log(b);
+// короткая записть когда в теле функции только return
+// const c = a.filter((el) => !!el)
+
+
+// console.log(b);
+
