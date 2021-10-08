@@ -110,3 +110,15 @@
 
 // console.log(b);
 
+const a = ['Andrey', 'Anton', 'Pavel'];
+
+const b = a.map((el,i) => {
+    return {
+       id: i+1,
+       name: el,
+       value:el.toUpperCase(),
+    }
+})
+
+console.log(b); // [{ id: 1, name: 'Andrey', value: 'ANDREY' }, { id: 2, name: 'Anton', value: 'ANTON' }, { id: 3, name: 'Pavel', value: 'PAVEL' },]
+
