@@ -184,13 +184,13 @@ const array = [
 ]*/
 
 // const b = array.map((el) => {
-//     if (el.address.country === "Russia") {
-//         return {
-//             id: el.id,
-//             name:`${el.firstName} ${el.lastName}`,
-//             country: el.address.country,
-//         }
-//     };
+//     return {
+//         id: el.id,
+//         name: `${el.firstName} ${el.lastName}`,
+//         country: el.address.country,
+//     }
+// }).filter((el) => {
+//     return el.country === "Russia"
 // })
 // console.log(b);
 
@@ -213,10 +213,32 @@ const array = [
         fat: true,
     }
 ]*/
-const b = array.map((el) => {
-        return {
-            id: el.id,
-            name:el.firstName,
-        }
+
+// const b = array.map((el) => {
+//         return {
+//             id: el.id,
+//             name:el.firstName,
+//             fat: el.weight > 100
+//         }
+// })
+// console.log(b);
+
+
+// Task 3
+// Используя task3.html, написать скрипт, который посредством только js отрендерит выбор людей:
+
+/*<select>
+    <option value='andrey'>Andrey Kashin</option>
+    <option value='pavel'>Pavel Scherbakov</option>
+    <option value='anton'>Anton Zakharov</option>
+</select>*/
+
+const div = document.getElementById("root");
+const select = document.createElement("select");
+array.forEach((el) => {
+    const option = document.createElement("option");
+    option.innerText = `${el.firstName}  ${el.lastName}`;
+    option.value = el.firstName.toLowerCase();
+    select.append(option);
 })
-console.log(b);
+div.append(select);
