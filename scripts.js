@@ -110,15 +110,113 @@
 
 // console.log(b);
 
-const a = ['Andrey', 'Anton', 'Pavel'];
+// const a = ['Andrey', 'Anton', 'Pavel'];
 
-const b = a.map((el,i) => {
-    return {
-       id: i+1,
-       name: el,
-       value:el.toUpperCase(),
+// const b = a.map((el,i) => {
+//     return {
+//        id: i+1,
+//        name: el,
+//        value:el.toUpperCase(),
+//     }
+// })
+
+// console.log(b); // [{ id: 1, name: 'Andrey', value: 'ANDREY' }, { id: 2, name: 'Anton', value: 'ANTON' }, { id: 3, name: 'Pavel', value: 'PAVEL' },]
+
+
+const array = [
+    {
+        id: 0,
+        firstName: 'Andrey',
+        lastName: 'Kashin',
+        age: 30,
+        address: {
+            country: 'Russia',
+            city: 'Novosibirsk',
+            street: 'Gogolya',
+        },
+        isMarried: false,
+        weight: 101,
+        hasCar: true,
+    },
+    {
+        id: 1,
+        firstName: 'Pavel',
+        lastName: 'Scherbakov',
+        age: 32,
+        address: {
+            country: 'Russia',
+            city: 'Novosibirsk',
+            street: 'Zhukovskogo',
+        },
+        isMarried: false,
+        weight: 80,
+        hasCar: true,
+    },
+    {
+        id: 2,
+        firstName: 'Anton',
+        lastName: 'Zakharov',
+        age: 36,
+        address: {
+            country: 'Poland',
+            city: 'Wroclaw',
+            street: 'Dmowskiego',
+        },
+        isMarried: true,
+        weight: 105,
+        hasCar: false,
+    },
+];
+
+// Task 1.
+// Вывести в консоль массив следующего вида. Отфильтровать по стране - России.
+/*[
+    {
+        id: 0,
+        name: 'Andrey Kashin',
+        country: 'Russia'
+    },
+    {
+        id: 1,
+        name: 'Pavel Scherbakov',
+        country: 'Russia'
     }
+]*/
+
+// const b = array.map((el) => {
+//     if (el.address.country === "Russia") {
+//         return {
+//             id: el.id,
+//             name:`${el.firstName} ${el.lastName}`,
+//             country: el.address.country,
+//         }
+//     };
+// })
+// console.log(b);
+
+// Task 2.
+// Вывести в консоль массив следующего вида. Новый ключ - fat, принимает булевое значение weight > 100.
+/*[
+    {
+        id: 0,
+        name: 'Andrey',
+        fat: true, // weight > 100
+    },
+    {
+        id: 1,
+        name: 'Pavel',
+        fat: false,
+    },
+    {
+        id: 2,
+        name: 'Anton',
+        fat: true,
+    }
+]*/
+const b = array.map((el) => {
+        return {
+            id: el.id,
+            name:el.firstName,
+        }
 })
-
-console.log(b); // [{ id: 1, name: 'Andrey', value: 'ANDREY' }, { id: 2, name: 'Anton', value: 'ANTON' }, { id: 3, name: 'Pavel', value: 'PAVEL' },]
-
+console.log(b);
